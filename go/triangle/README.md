@@ -57,3 +57,12 @@ The Ruby Koans triangle project, parts 1 & 2 [http://rubykoans.com](http://rubyk
 
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
+
+---
+
+## Learnings
+
+- `iota` helps give _int_ values to _const_. It increments automatically
+- When defining `const`, if all values except the first one don't have a type, Go will use the same type as the first `const` declaration
+- Use `math.isNaN` and `math.isInf` to assert math operations that probably involves `NaN` and `Inf` values
