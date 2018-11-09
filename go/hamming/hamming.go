@@ -11,7 +11,7 @@ func Distance(a, b string) (int, error) {
 		return -1, errors.New("strings must have the same length")
 	}
 	var hammingDist int
-	for i := 0; i < len(a); i++ {
+	for i := range a {
 		if a[i] != b[i] {
 			hammingDist++
 		}
