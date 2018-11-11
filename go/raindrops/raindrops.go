@@ -1,20 +1,22 @@
+// Package raindrops is an exercise on exercism.io
 package raindrops
 
-import "fmt"
+import "strconv"
 
-func  Convert(number int) string {
+// Convert a number to string following exercism.io's Raindrops exercise
+func Convert(number int) string {
 	text := ""
-	if number % 3 == 0 {
+	if number%3 == 0 {
 		text += "Pling"
 	}
-	if number % 5 == 0 {
+	if number%5 == 0 {
 		text += "Plang"
 	}
-	if number % 7 == 0 {
+	if number%7 == 0 {
 		text += "Plong"
 	}
 	if text == "" {
-		text = fmt.Sprintf("%v", number)
+		text = strconv.Itoa(number)
 	}
 	return text
 }
